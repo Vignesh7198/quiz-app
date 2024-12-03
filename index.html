@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color:cornflowerblue;">
+    <div class="text-center w-2/3 m-auto mt-52 quiz-shadow box bg-white" id="quizmain">
+        <h1 class="font-bold text-3xl p-5">Coding Quiz Challenge</h1>
+        <br>
+        <p class="valid-name hidden text-red-600 font-semibold text-sm ml-7 md:text-lg md:ml-auto">* Enter Valid Name</p>
+        <p class="inline text-xl -ml-5">Name</p>
+        <input class="border border-black inline w-6/12 md:w-4/12" type="text" required>
+        <br>
+        <br>
+        <p class="valid-email hidden text-red-600 font-semibold text-sm ml-7 md:text-lg md:ml-auto">* Enter Valid Email</p>
+        <p class="inline text-xl -ml-5">Mailid</p>
+        <input class="border border-black inline w-6/12 md:w-4/12" type="email" required>
+        <br>
+        <br>
+        <button class="p-1 bg-blue-600 rounded mb-5 font-bold text-white ml-5 md:ml-auto " type="submit">Start Quiz</button>
+        <h1 class="fill-status hidden text-red-600 font-semibold text-sm ml-7 md:text-lg md:ml-auto">*Fill all details</h1>
+    </div>
+    <div class="bg-white text-center w-11/12 m-auto h-full mt-10 md:mt-52 p-10 quiz-shadow hidden box" id="instructions">
+        <h1 class="text-4xl font-bold">Instructions</h1>
+        <ul class="list-disc list-inside text-left text-xl font-thin mt-5">
+            <li>The quizzes consists of questions carefully designed to help you self-assess your comprehension of the
+                information presented on the topics covered in the module.</li>
+            <li>No data will be collected on the website regarding your responses or how many times you take the quiz.
+            </li>
+            <li>Try to answer the following code-related questions within the time limit.</li>
+            <li>Keep in mind that incorrect answers will penalize your score/time by ten seconds!</li>
+        </ul>
+        <button class="p-1 bg-blue-600 rounded-md mb-10 font-bold text-white ">Go to Quiz</button>
+    </div>
+    <div class="bg-white text-left w-11/12 m-auto mt-52 p-10 quiz-shadow hidden box">
+        <h1 class="timer text-center font-bold"></h1>
+        <h1 class="text-2xl">1. What does HTML stand for?</h1>
+        <ul class="flex flex-col gap-2 p-2">
+            <li><input type="radio" value="1" name="optionone" class="ml-2" id="one"><label for="one"
+                    class="ml-2">Hyperlinks and Text Markup Language</label></li>
+            <li class="correct"><input type="radio" value="2" name="optionone" class="ml-2" id="two"><label for="two"
+                    class="ml-2">Hyper Text Markup Language</label></li>
+            <li><input type="radio" value="3" name="optionone" class="ml-2" id="three"><label for="three"
+                    class="ml-2">Home Tool Markup Language</label></li>
+        </ul>
+        <div class="text-center mt-10">
+            <button class="p-1 bg-blue-600 rounded-md mb-10 font-bold text-white">Next</button>
+        </div>
+    </div>
+    <div class="bg-white text-left w-11/12 m-auto mt-52 p-10 quiz-shadow hidden box">
+        <h1 class="timer text-center font-bold"></h1>
+        <h1 class="text-2xl">2. Who is making the Web standards?
+        </h1>
+        <ul class="flex flex-col gap-2 p-2">
+            <li><input type="radio" value="1" name="optionone" class="ml-2" id="one"><label for="one"
+                    class="ml-2">Mozilla</label></li>
+            <li><input type="radio" value="2" name="optionone" class="ml-2" id="two"><label for="two"
+                    class="ml-2">Microsoft</label></li>
+            <li><input type="radio" value="3" name="optionone" class="ml-2" id="three"><label for="three"
+                    class="ml-2">Google</label></li>
+            <li class="correct"><input type="radio" value="4" name="optionone" class="ml-2" id="three"><label
+                    for="three" class="ml-2">The World Wide Web Consortium
+                </label></li>
+        </ul>
+        <div class="text-center mt-10">
+            <button class="p-1 bg-blue-600 rounded-md mb-10 font-bold text-white previousbutton">Previous</button>
+            <button class="p-1 bg-blue-600 rounded-md mb-10 font-bold text-white nextbutton ">Next</button>
+        </div>
+    </div>
+
+    <div class="bg-white text-left w-11/12 m-auto mt-52 p-10 quiz-shadow hidden box">
+        <h1 class="timer text-center font-bold"></h1>
+        <h1 class="text-2xl">3. Which character is used to indicate an end tag?</h1>
+        <ul class="flex flex-col gap-2 p-2">
+            <li class="correct"><input type="radio" value="1" name="optionone" class="ml-2" id="one"><label for="one"
+                    class="ml-2">/</label></li>
+            <li><input type="radio" value="2" name="optionone" class="ml-2" id="two"><label for="two"
+                    class="ml-2">*</label></li>
+            <li><input type="radio" value="3" name="optionone" class="ml-2" id="three"><label for="three"
+                    class="ml-2">^</label></li>
+            <li><input type="radio" value="3" name="optionone" class="ml-2" id="three"><label for="three"
+                    class="ml-2">></label></li>
+        </ul>
+        <div class="text-center mt-10">
+            <button class="p-1 bg-blue-600 rounded-md mb-10 font-bold text-white previousbutton">Previous</button>
+            <button class="p-1 bg-blue-600 rounded-md mb-10 font-bold text-white nextbutton ">Next</button>
+        </div>
+    </div>
+    <div class="bg-white text-left w-11/12 m-auto mt-52 p-10 quiz-shadow hidden box">
+        <h1 class="timer text-center font-bold"></h1>
+        <h1 class="text-2xl">4. HTML program is saved using _________ extension.</h1>
+        <ul class="flex flex-col gap-2 p-2">
+            <li><input type="radio" value="1" name="optionone" class="ml-2" id="one"><label for="one"
+                    class="ml-2">.htl</label></li>
+            <li class="correct"><input type="radio" value="2" name="optionone" class="ml-2" id="two"><label for="two"
+                    class="ml-2">.html</label></li>
+            <li><input type="radio" value="3" name="optionone" class="ml-2" id="three"><label for="three"
+                    class="ml-2">.hml</label></li>
+            <li><input type="radio" value="4" name="optionone" class="ml-2" id="three"><label for="three"
+                    class="ml-2">.htlm</label></li>
+        </ul>
+        <div class="text-center mt-10">
+            <button class="p-1 bg-blue-600 rounded-md mb-10 font-bold text-white previousbutton">Previous</button>
+            <button class="p-1 bg-blue-600 rounded-md mb-10 font-bold text-white nextbutton ">Next</button>
+        </div>
+    </div>
+    <div class="bg-white text-left w-11/12 m-auto mt-52 p-10 quiz-shadow hidden box">
+        <h1 class="timer text-center font-bold"></h1>
+        <h1 class="text-2xl">5. Which of the following is used increase the col width?</h1>
+        <ul class="flex flex-col gap-2 p-2">
+            <li><input type="radio" value="1" name="optionone" class="ml-2" id="one"><label for="one"
+                    class="ml-2">cellspacing</label></li>
+            <li><input type="radio" value="2" name="optionone" class="ml-2" id="two"><label for="two"
+                    class="ml-2">cellpadding</label></li>
+            <li><input type="radio" value="3" name="optionone" class="ml-2" id="three"><label for="three"
+                    class="ml-2">Row span</label></li>
+            <li class="correct"><input type="radio" value="4" name="optionone" class="ml-2" id="three"><label
+                    for="three" class="ml-2">Col span</label></li>
+        </ul>
+        <div class="text-center mt-10">
+            <button class="p-1 bg-blue-600 rounded-md mb-10 font-bold text-white previousbutton">Previous</button>
+            <button class="p-1 bg-blue-600 rounded-md mb-10 font-bold text-white nextbutton ">Submit</button>
+        </div>
+    </div>
+
+    <div class="bg-white text-center  w-11/12 m-auto mt-52 p-10 quiz-shadow hidden box">
+        <h1 class="text-2xl font-bold">Your Score</h1>
+        <div class="mt-5">
+            <p class="inline">Player Name:</p>
+            <p class="inline playername">username</p>
+        </div>
+        <div>
+            <p class="inline">Player Email:</p>
+            <p class="inline playeremail">mail@gmail.com..</p>
+        </div>
+        <div>
+            <p class="inline">Score</p>
+            <p class="inline gamescore">0 / 5</p>
+        </div>
+        <div class="text-center mt-10">
+            <button class="p-1 bg-blue-600 rounded-md mb-10 font-bold text-white previousbutton">Restart Quiz</button>
+            <button class="p-1 bg-blue-600 rounded-md mb-10 font-bold text-white nextbutton ">View Answer</button>
+        </div>
+    </div>
+
+    <div class="bg-white show-answers w-full h-full text-left md:w-6/12 m-auto mt-10 p-10 quiz-shadow box hidden">
+        <h1 class="text-xl">1. What does HTML stand for?</h1>
+        <p class="correct-answer font-semibold">Answer: Hyper Text Markup Language</p>
+        <p class="font-semibold">Your Answer: <span class="your-answer">Un-Answered</span></p>
+        <br>
+        <h1 class="text-xl">2. Who is making the Web standards?</h1>
+        <p class="correct-answer font-semibold">Answer: The World Wide Web Consortium</p>
+        <p class="font-semibold">Your Answer: <span class="your-answer">Un-Answered</span></p>
+        <br>
+        <h1 class="text-xl">3. Which character is used to indicate an end tag?</h1>
+        <p class="correct-answer font-semibold">Answer: /</p>
+        <p class="font-semibold">Your Answer: <span class="your-answer">Un-Answered</span></p>
+        <br>
+        <h1 class="text-xl">4. HTML program is saved using _________ extension.</h1>
+        <p class="correct-answer font-semibold">Answer: .html</p>
+        <p class="font-semibold">Your Answer: <span class="your-answer">Un-Answered</span></p>
+        <br>
+        <h1 class="text-xl">5. Which of the following is used increase the col width?</h1>
+        <p class="correct-answer font-semibold">Answer: Col span</p>
+        <p class="font-semibold">Your Answer: <span class="your-answer">Un-Answered</span></p>
+
+        <div class="flex justify-center">
+        <button class="p-1 bg-blue-600 rounded mb-5 font-bold text-white previousbutton">Previous</button>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
